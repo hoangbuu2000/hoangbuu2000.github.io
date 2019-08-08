@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>BLOG - Kichi Kichi</title>
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			$('.owl-carousel').owlCarousel({
+				loop:true,
+				margin:20,
+				nav:true,
+				autoplay:true,
+				autoplayHoverPause:true,
+				autoplayTimeout: 3000,
+				dotsSpeed:500,
+				smartSpeed:1000,
+				slideBy:2,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:2
+					},
+					800:{
+						items:3
+					},
+					1000:{
+						items:4
+					}
+				}
+			})
+		});
+    	$(document).ready(function(){
+			
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 80)
+				{
+					$(".arrow, #top-nav1").fadeIn(400);
+					$("#top-nav1").css({"position":"fixed","top":"0"});
+				}
+				else
+				{
+					$(".arrow, #top-nav1").fadeOut(400);
+					
+				}
+			})
+			
+			$(".arrow").click(function(){
+				$("html, body").animate({scrollTop: 0}, 1000) ;
+			});
+		})
+    </script>
+</head>
+
+<body>
+	<!-- TOP NAVIGATION & BANNER -->
+	<div id="top-nav">
+       	<div id="logo">
+          	<a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+       	</div>
+        <div id="top-menu">
+            <ul>
+                <li><a href="menu.html">THỰC ĐƠN</a></li>
+                <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+           	</ul>
+      	</div>
+  	</div>
+    <div id="top-nav1">
+       	<div id="logo">
+          	<a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+       	</div>
+        <div id="top-menu">
+            <ul>
+                <li><a href="menu.html">THỰC ĐƠN</a></li>
+                <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+           	</ul>
+      	</div>
+  	</div>
+    <!-- BODY -->
+    
+    <!-- Set up your HTML -->
+    <div class="owl-carousel owl-theme">
+        <div class="item1">
+        	<a href="blog1.html"><img src="images/blog1.jpg"/>
+                <h4>Ăn lẩu ngon và thử các món nước mới của Kichi với giá cực đã</h4>
+                <p>01/01/2018<br/>
+    			Kichi Kichi hiện giờ đã phủ sóng gần khắp Sài Gòn rùi nên muốn đi ăn cũng tiện, xách xe vọt cái là tới. Kichi Kichi Đ/c: Tầng 4 Pearl Plaza, 561 Điện Biên Phủ,  </p>
+    		</a>
+        </div>
+        <div class="item1">
+        	<a href="blog2.html"><img src="images/blog2.jpg"/>
+            	<h4>Tưng bừng mừng khai trương trở lại của Kichi-Kichi Vincom Đồng Khởi</h4>
+                <p>18/10/2017<br/>
+Chào đón sự trở lại của nhà hàng Kichi-Kichi Vincom Đồng Khởi-khu vực trung tâm quận 1 với những chương trình ưu đãi lớn hấp dẫn. Chào đón sự trở lại của nhà hàng Kichi</p>
+            </a>
+        </div>
+        <div class="item1">
+        	<a href="blog3.html"><img src="images/blog3.jpg"/>
+            	<h4>Vừa ăn, vừa chơi vui tới bến cùng Kichi Kichi Hà Nội</h4>
+                <p>09/02/2017<br/>
+“Tháng giêng là tháng ăn chơi”, bạn đã lên kế hoạch ăn-cả-Hà-Nội đến đâu rồi? Đừng quên thêm lẩu băng chuyền Kichi Kichi vào danh sách các món nhất định phải ăn với đủ tiêu</p>
+            </a>
+        </div>
+        <div class="item1">
+        	<a href="blog4.html"><img src="images/blog4.jpg"/>
+            	<h4>Checklist cho mùa hè mát lạnh: Lẩu riêu cua + Nước detox</h4>
+                <p>27/04/2017<br/>
+Bí kíp chống nóng 2017 sẽ giúp bạn tận hưởng một mùa hè mát lạnh, thoả mãn thú ăn uống, thanh lọc cơ thể chỉ với 39K! Bí kíp chống nóng 2017 sẽ giúp bạn</p>
+            </a>
+        </div>
+        <div class="item1">
+        	<a href="blog5.html"><img src="images/blog5.jpg"/>
+            	<h4>Tín đồ ẩm thực hào hứng khám phá món thịt bò bay</h4>
+                <p>21/11/2016<br/>
+Giáng sinh này, giới trẻ Sài thành có thêm một món ăn thú vị chờ khám phá. Đó là combo thịt bay mới lạ tại chuỗi nhà hàng buffet lẩu băng chuyền Kichi Kichi. Không</p>
+            </a>
+        </div>
+        <div class="item1">
+        	<a href="blog6.html"><img src="images/blog6.jpg"/>
+            	<h4>Ăn no nê, khuyến mãi siêu “phê” tại lẩu băng chuyền Kichi Dolphin Plaza</h4>
+                <p>10/10/2017<br/>
+“Bơi” thỏa thích trong nồi lẩu ngập thịt với ưu đãi ăn 4 tặng 1 buffet, check-in nhận ngay pepsi tươi cực đỉnh nhân dịp khai trương nhà hàng mới tại Dolphin Plaza, số 6</p>
+            </a>
+        </div>
+        <div class="item1">
+        	<a href="blog7.html"><img src="images/blog7.jpg"/>
+            	<h4>Món tráng miệng Kakigori được yêu thích tại Kichi Kichi</h4>
+                <p>17/03/2016<br/>
+Món tráng miệng Kakigori hấp dẫn giới trẻ với hai hương vị Kakigori trái cây tươi mát và Kakigori ngũ cốc bổ dưỡng Với nhiều hương vị cùng hơn 50 món nhúng lẩu, Kichi Kichi</p>
+            </a>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="contact">
+    	<div class="col">
+        	<ul>
+            	<li><a href=""><img src="images/fb.png" alt="facebook" /></a></li>
+                <li><a href=""><img src="images/instgram.png" alt="instagram" /></a></li>
+                <li><a href=""><img src="images/youtube.png" alt="youtube" /></a></li>
+            </ul>
+        </div>
+        <div class="col">
+        	<form>
+        	<table>
+            	<tr>
+                	<td>Đăng ký để nhận ưu đãi hàng tháng</td>
+                    <td>
+                    	<input type="email" placeholder=" Địa chỉ email"/>
+                        <input type="submit" value="ĐĂNG KÝ"/>
+                  	</td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+    	<div class="col-foot first">
+        	<hr/>
+            <h3>VỀ GOLDEN GATE</h3>
+            <ul>
+            	<li><a href="">TỔNG QUAN</a></li>
+                <li><a href="">SỨ MỆNH</a></li>
+                <li><a href="">TĂNG TRƯỞNG</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>THE GOLDEN SPOON</h3>
+            <ul>
+            	<li><a href="">Hiện đã có trên AppStore và CHPlay</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>VĂN HÓA</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TIN TỨC</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TUYỂN DỤNG</h3>
+            <ul>
+            	<li><a href="">Hotline: 19006622</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>LIÊN HỆ</h3>
+        </div>
+    </div>
+    <!-- ABOUT US -->
+    <div class="about-us">
+        <hr/>
+        <div class="col-about text">
+            <p>Công ty Cổ phần Thương mại Dịch vụ Cổng Vàng<br/>
+                Trụ sở chính: Số 60 Phố Giang Văn Minh, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội, Việt Nam<br/>
+                GPĐK: 0102721191 cấp ngày 09/04/2008<br/>
+          	 ĐT: 043 222 3000 Email: support.hn@ggg.com.vn</p>
+      	</div>
+      	<div class="col-about img">
+            <img src="images/logo1.png" alt="logo" />
+           	<p>&copy; 2011 Golden Gate, JSC. All rights reserved
+      	</div>
+    </div>
+    <!-- VERTICAL NAV -->
+     <div class="vertical-nav opa">
+    	<div class="item">
+        	<img src="images/facebook.png" alt="facebook" />
+        </div>
+        <div class="item sub">
+        	<img src="images/youtube1.png" alt="youtube" />
+        </div>
+         <div class="item sub">
+        	<img src="images/instagram.png" alt="instagram" />
+        </div>
+    </div>
+    <!-- GO TO TOP -->
+    <div class="arrow">
+    	<i class="fa fa-arrow-up"></i>
+    </div>
+</body>
+</html>

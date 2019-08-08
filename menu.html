@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <title>THỰC ĐƠN - Kichi Kichi</title>
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/animate.css" rel="stylesheet"/>
+    <script src="js/wow.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+			
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 80)
+				{
+					$(".arrow, #top-nav1").fadeIn(400);
+					$("#top-nav1").css({"position":"fixed","top":"0"});
+				}
+				else
+				{
+					$(".arrow, #top-nav1").fadeOut(400);
+					
+				}
+			})
+			
+			$(".arrow").click(function(){
+				$("html, body").animate({scrollTop: 0}, 1000) ;
+			});
+		})
+    </script>
+</head>
+
+<body>
+	<!-- TOP NAVIGATION -->
+   	<div id="top-nav">
+     	<div id="logo">
+       	   <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+      	</div>
+   		<div id="top-menu">
+           	<ul>
+                <li><a href="menu.html">THỰC ĐƠN</a></li>
+                <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top-nav1">
+            <div id="logo">
+                <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+            </div>
+            <div id="top-menu">
+                <ul>
+                    <li><a href="menu.html">THỰC ĐƠN</a></li>
+                    <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+  	</div>
+    <!-- GO TO TOP -->
+    <div class="arrow">
+    	<i class="fa fa-arrow-up"></i>
+    </div>
+    <!-- MAIN BODY -->
+    <div class="body">
+    	<h2>THỰC ĐƠN</h2>
+       	<hr/>
+        <ul>
+       		<li><a href="menu.html" id="active">BUFFET</a></li>
+           	<li><a href="menu1.html">ĐỒ UỐNG</a></li>
+            <li><a href="menu2.html">NƯỚC LẨU</a></li>
+     	</ul>
+       	<hr/>
+      	<h2 class="wow shake">199.000 - 239.000<span> // Áp dụng cho tất cả ngày trong tuần</span></h2>
+        <!-- MENU ODD ROW-->
+  		<div class="row odd wow zoomIn">
+           	<div class="col-img">
+            	<img src="images/menu1.jpg" alt="Thịt bò" />
+           	</div>
+        	<div class="col-text">
+               	<h2>THỊT BÒ</h2>
+                <hr/>
+             	<div class="left">
+                  	<p>BA CHỈ BÒ MỸ</p>
+                    <p class="sub-para">BẸ VAI BÒ MỸ</p>
+                 	<p class="sub-para">NẠC VAI BÒ ÚC</p>
+                  	<p class="sub-para">BẮP BÒ ÚC</p>
+               	</div>
+              	<div class="right">
+                    <p>TRỨNG VỊT LỘN</p>
+                    <p class="sub-para">ĐÙI GÀ ƯỚP DẦU MÈ</p>
+                	<p class="sub-para">TIM HEO</p>
+         		</div>
+      		</div>
+        </div>
+        <!-- MENU EVEN ROW-->
+      	<div class="row even wow zoomIn">
+          	<div class="col-img">
+             	<img src="images/menu2.jpg" alt="Cá hồi" />
+            </div>
+          	<div class="col-text">
+              	<h2>HẢI SẢN</h2>
+                <hr/>
+             	<div class="left">
+                	<p>CÁ HỒI NAUY</p>
+                  	<p class="sub-para">CÁ TƯƠI PHILET</p>
+                   	<p class="sub-para">MỰC TRỨNG/MỰC ỐNG</p>
+               		<p class="sub-para">RÂU MỰC</p>
+               	</div>
+             	<div class="right">
+                   	<p>BẠCH TUỘC</p>
+                 	<p class="sub-para">NGAO</p>
+               		<p class="sub-para">TÔM SÚ/TÔM RẢO</p>
+            	</div>
+       		</div>
+        </div>
+        <!-- MENU ODD ROW-->
+     	<div class="row odd wow zoomIn">
+         	<div class="col-img">
+             	<img src="images/menu3.jpg" alt="Handmade" />
+           	</div>
+      		<div class="col-text">
+              	<h2>HANDMADE</h2>
+              	<hr/>
+              	<div class="left">
+                    <p>XÚC XÍCH PHÔ MAI</p>
+                   	<p class="sub-para">XÚC XÍCH NẤM</p>
+                    <p class="sub-para">ĐẬU HŨ SURIMI</p>
+                    <p class="sub-para">ĐẬU PHỤ PHOMAI</p>
+               		<p class="sub-para">FISH YUBA</p>
+                </div>
+               	<div class="right">
+                    <p>BA CHỈ BÒ MỸ CUỘN NẤM KIM CHÂM</p>
+                    <p class="sub-para">SỦI CẢO BÒ</p>
+                    <p class="sub-para">HÁ CẢO TÔM</p>
+                    <p class="sub-para">VIÊN BÒ ĐẶC BIỆT</p>
+               		<p class="sub-para">VIÊN CÁ</p>
+            	</div>
+          	</div>
+      	</div>
+        <!-- MENU EVEN ROW-->
+   		<div class="row even wow zoomIn">
+          	<div class="col-img">
+           		<img src="images/menu4.jpg" alt="Rau tươi" />
+           	</div>
+        	<div class="col-text">
+                <h2>RAU TƯƠI THEO MÙA</h2>
+                <hr/>
+             	<div class="left">
+                    <p>RAU MÙNG TƠI</p>
+                    <p class="sub-para">RAU CẦN</p>
+                 	<p class="sub-para">RAU MUỐNG</p>
+                    <p class="sub-para">CẢI NGỌT</p>
+                    <p class="sub-para">CẢI XOONG</p>
+                  	<p class="sub-para">CẢI BẮP</p>
+                </div>
+           		<div class="right">
+                    <p>CẢI XANH</p>
+                    <p class="sub-para">CẢI CHÍP</p>
+                    <p class="sub-para">CẢI BÓ XÔI</p>
+                    <p class="sub-para">CẢI CÚC</p>
+              		<p class="sub-para">CẢI THẢO</p>
+           		</div>
+        	</div>
+        </div>
+        <!-- MENU ODD ROW-->
+    	<div class="row odd wow zoomIn">
+            <div class="col-img">
+            	<img src="images/menu5.jpg" alt="Nấm tươi" />
+           	</div>
+       		<div class="col-text">
+               	<h2>NẤM TƯƠI THEO MÙA</h2>
+                <hr/>
+               	<div class="left">
+                    <p>NẤM TRÂM TRẮNG</p>
+                    <p class="sub-para">NẤM ĐÔNG CÔ TƯƠI</p>
+                    <p class="sub-para">NẤM VỊ CUA NÂU</p>
+                   	<p class="sub-para">NẤM VỊ CUA TRẮNG</p>
+                </div>
+               	<div class="right">
+                   	<p>NẤM TIÊN</p>
+                    <p class="sub-para">NẤM CHINH HẢI</p>
+                    <p class="sub-para">NẤM TUYẾT NHĨ</p>
+                	<p class="sub-para">NẤM ĐÙI GÀ</p>
+         		</div>
+            </div>
+        </div>
+        <!-- MENU EVEN ROW-->
+       	<div class="row even wow zoomIn">
+           	<div class="col-img">
+               	<img src="images/menu6.jpg" alt="Mỳ & đồ ăn kèm" />
+            </div>
+       		<div class="col-text">
+                <h2>MỲ & ĐỒ ĂN KÈM</h2>
+                <hr/>
+              	<div class="left">
+                   	<p>RONG BIỂN NHẬT</p>
+                   	<p class="sub-para">PHÙ TRÚC CHIÊN</p>
+                    <p class="sub-para">PHÙ TRÚC TƯƠI</p>
+                    <p class="sub-para">MỲ UDON</p>
+                    <p class="sub-para">MIẾN HÀN QUỐC</p>
+                    <p class="sub-para">ĐẬU PHỤ</p>
+                </div>
+              	<div class="right">
+                    <p>KHOAI LANG NHẬT</p>
+                    <p class="sub-para">NGÔ NGỌT</p>
+                    <p class="sub-para">MỲ CHŨ</p>
+                    <p class="sub-para">KIMCHI</p>
+                    <p class="sub-para">MỲ RONG BIỂN</p>
+                	<p class="sub-para">MỲ TƯƠI NHẬT BẢN</p>
+            	</div>
+         	</div>
+        </div>
+        <!-- MENU ODD ROW-->
+     	<div class="row odd wow zoomIn">
+            <div class="col-img">
+               	<img src="images/menu7.jpg" alt="Sushi" />
+            </div>
+          	<div class="col-text">
+                <h2>SUSHI</h2>
+                <hr/>
+               	<div class="left">
+                    <p>CALIFORNIA VỪNG TRẮNG</p>
+                    <p class="sub-para">CALIFORNIA VỪNG ĐEN</p>
+                    <p class="sub-para">CALIFORNIA RONG BIỂN</p>
+                    <p class="sub-para">CALIFORNIA TRỨNG CUA XANH</p>
+                    <p class="sub-para">CALIFORNIA TRỨNG CUA ĐỎ</p>
+                </div>
+              	<div class="right">
+                    <p>FUTOMAKI RONG BIỂN</p>
+                    <p class="sub-para">FUTUMAKI DA CÁ HỒI</p>
+                    <p class="sub-para">FUTUMAKI BÒ SỐT</p>
+                    <p class="sub-para">FUTUMAKI TỔNG HỢP</p>
+               		<p class="sub-para">CALIFORNIA PHÔ MAI VÀ THỊT LỢN CHIÊN XÙ</p>
+            	</div>
+         	</div>
+        </div>
+        <!-- MENU EVEN ROW-->
+    	<div class="row even wow zoomIn">
+           	<div class="col-img">
+               	<img src="images/menu8.jpg" alt="Tráng miệng" />
+           	</div>
+         	<div class="col-text">
+                <h2>TRÁNG MIỆNG</h2>
+                <hr/>
+               	<div class="left">
+                	<p>HOA QUẢ THEO MÙA</p>
+                    <p class="sub-para">TRÀ QUẾ</p>
+                </div>
+               	<div class="right">
+                 	<p>CHÈ LONG NHÃN</p>
+            	</div>
+        	</div>
+    	</div>
+    </div>
+    <!-- CONTACT -->
+    <div class="contact">
+    	<div class="col">
+        	<ul>
+            	<li><a href=""><img src="images/fb.png" alt="facebook" /></a></li>
+                <li><a href=""><img src="images/instgram.png" alt="instagram" /></a></li>
+                <li><a href=""><img src="images/youtube.png" alt="youtube" /></a></li>
+            </ul>
+        </div>
+        <div class="col">
+        	<form>
+        	<table>
+            	<tr>
+                	<td>Đăng ký để nhận ưu đãi hàng tháng</td>
+                    <td>
+                    	<input type="email" placeholder=" Địa chỉ email"/>
+                        <input type="submit" value="ĐĂNG KÝ"/>
+                  	</td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+    	<div class="col-foot first">
+        	<hr/>
+            <h3>VỀ GOLDEN GATE</h3>
+            <ul>
+            	<li><a href="">TỔNG QUAN</a></li>
+                <li><a href="">SỨ MỆNH</a></li>
+                <li><a href="">TĂNG TRƯỞNG</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>THE GOLDEN SPOON</h3>
+            <ul>
+            	<li><a href="">Hiện đã có trên AppStore và CHPlay</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>VĂN HÓA</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TIN TỨC</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TUYỂN DỤNG</h3>
+            <ul>
+            	<li><a href="">Hotline: 19006622</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>LIÊN HỆ</h3>
+        </div>
+    </div>
+    <div class="about-us">
+        	<hr/>
+        	<div class="col-about text">
+            	<p>Công ty Cổ phần Thương mại Dịch vụ Cổng Vàng<br/>
+                Trụ sở chính: Số 60 Phố Giang Văn Minh, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội, Việt Nam<br/>
+                GPĐK: 0102721191 cấp ngày 09/04/2008<br/>
+                ĐT: 043 222 3000 Email: support.hn@ggg.com.vn</p>
+            </div>
+            <div class="col-about img">
+            	<img src="images/logo1.png" alt="logo" />
+                <p>&copy; 2011 Golden Gate, JSC. All rights reserved
+            </div>
+    </div>
+    <!-- VERTICAL NAV -->
+    <div class="vertical-nav opa">
+    	<div class="item">
+        	<img src="images/facebook.png" alt="facebook" />
+        </div>
+        <div class="item sub">
+        	<img src="images/youtube1.png" alt="youtube" />
+        </div>
+         <div class="item sub">
+        	<img src="images/instagram.png" alt="instagram" />
+        </div>
+    </div>
+    <script>
+    	new WOW().init();
+    </script>
+</body>
+</html>

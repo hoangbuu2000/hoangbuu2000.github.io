@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/uudai.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css" />
+    <title>ƯU ĐÃI - Kichi Kichi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/animate.css" rel="stylesheet"/>
+    <script src="js/wow.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+			
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 80)
+				{
+					$(".arrow, #top-nav1").fadeIn(400);
+					$("#top-nav1").css({"position":"fixed","top":"0"});
+				}
+				else
+				{
+					$(".arrow, #top-nav1").fadeOut(400);
+					
+				}
+			})
+			
+			$(".arrow").click(function(){
+				$("html, body").animate({scrollTop: 0}, 1000) ;
+			});
+			
+			var i = 1;
+			$(".location span").click(function(){
+				$(".content").slideToggle(500);
+				$(".location span i").removeClass();
+				if(i % 2 == 0)
+				{
+					$(".location span i").addClass("fa fa-caret-right");
+					$(".location span i").css("marginRight", "0px");
+				}
+				else
+				{
+					$(".location span i").addClass("fa fa-caret-down");
+					$(".location span i").css("marginRight", "2px");
+				}
+				i++;
+			});
+			
+			$(".x-button span").click(function(){
+				$("#ads").css("visibility","hidden");
+				$("#top-nav1").removeClass("opa") ;
+				$(".opa").animate({opacity:1}, 500).css("pointer-events", "auto");
+			});
+			
+		})
+    </script>
+</head>
+<body>
+	<!-- TOP NAVIGATION -->
+   	<div id="top-nav" class="opa">
+     	<div id="logo">
+       	   <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+      	</div>
+   		<div id="top-menu">
+           	<ul>
+                <li><a href="menu.html">THỰC ĐƠN</a></li>
+                <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top-nav1" class="opa">
+            <div id="logo">
+                <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+            </div>
+            <div id="top-menu">
+                <ul>
+                    <li><a href="menu.html">THỰC ĐƠN</a></li>
+                    <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+  	</div>
+    <!-- GO TO TOP -->
+    <div class="arrow opa">
+    	<i class="fa fa-arrow-up"></i>
+    </div>
+    <!-- BANNER -->
+    <div class="banner opa">
+    	<img src="images/banner6.png" alt="banner" />
+    </div>
+    <h1 class="opa">CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+    <!-- BODY -->
+    <div class="body opa">
+    	<div class="location">
+        	<span><i class="fa fa-caret-right"></i> KICHI KICHI HỒ CHÍ MINH</span>
+        </div>
+        <div class="content">
+        	<a href="uudai1.html"><img src="images/uudai1.jpg" alt="Ưu đãi" /></a>
+            <a href="uudai2.html"><img src="images/uudai2.jpg" alt="Ưu đãi" /></a>
+            <a href="uudai3.html"><img src="images/uudai3.jpg" alt="Ưu đãi" /></a>
+            <a href="uudai4.html"><img src="images/uudai4.jpg" alt="Ưu đãi" /></a>
+            <a href="uudai5.html"><img src="images/uudai3.png" alt="Ưu đãi" /></a>
+            <img src="images/gif.gif" alt="Ưu đãi" />
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="contact opa">
+    	<div class="col">
+        	<ul>
+            	<li><a href=""><img src="images/fb.png" alt="facebook" /></a></li>
+                <li><a href=""><img src="images/instgram.png" alt="instagram" /></a></li>
+                <li><a href=""><img src="images/youtube.png" alt="youtube" /></a></li>
+            </ul>
+        </div>
+        <div class="col">
+        	<form>
+        	<table>
+            	<tr>
+                	<td>Đăng ký để nhận ưu đãi hàng tháng</td>
+                    <td>
+                    	<input type="email" placeholder=" Địa chỉ email"/>
+                        <input type="submit" value="ĐĂNG KÝ"/>
+                  	</td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer opa">
+    	<div class="col-foot first">
+        	<hr/>
+            <h3>VỀ GOLDEN GATE</h3>
+            <ul>
+            	<li><a href="">TỔNG QUAN</a></li>
+                <li><a href="">SỨ MỆNH</a></li>
+                <li><a href="">TĂNG TRƯỞNG</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>THE GOLDEN SPOON</h3>
+            <ul>
+            	<li><a href="">Hiện đã có trên AppStore và CHPlay</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>VĂN HÓA</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TIN TỨC</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TUYỂN DỤNG</h3>
+            <ul>
+            	<li><a href="">Hotline: 19006622</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>LIÊN HỆ</h3>
+        </div>
+    </div>
+    <div class="about-us opa">
+        	<hr/>
+        	<div class="col-about text">
+            	<p>Công ty Cổ phần Thương mại Dịch vụ Cổng Vàng<br/>
+                Trụ sở chính: Số 60 Phố Giang Văn Minh, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội, Việt Nam<br/>
+                GPĐK: 0102721191 cấp ngày 09/04/2008<br/>
+                ĐT: 043 222 3000 Email: support.hn@ggg.com.vn</p>
+            </div>
+            <div class="col-about img">
+            	<img src="images/logo1.png" alt="logo" />
+                <p>&copy; 2011 Golden Gate, JSC. All rights reserved
+            </div>
+    </div>
+    <!-- VERTICAL NAV -->
+    <div class="vertical-nav opa">
+    	<div class="item">
+        	<img src="images/facebook.png" alt="facebook" />
+        </div>
+        <div class="item sub">
+        	<img src="images/youtube1.png" alt="youtube" />
+        </div>
+         <div class="item sub">
+        	<img src="images/instagram.png" alt="instagram" />
+        </div>
+    </div>
+    <!-- ADS -->
+    <div id="ads" class="ads animated jackInTheBox">
+    	<div class="x-button">
+        	<span>X</span>
+        </div>
+        <div class="image-ads">
+        	<img src="images/event2.png" />
+        </div>
+    </div>
+    <script>
+    	new WOW().init();
+    </script>
+</body>
+</html>

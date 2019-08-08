@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/uudai.css" />
+    <title>Đi 4 tính tiền 3 - Kichi Kichi</title>
+    <script src="js/xacnhan.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+			
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 80)
+				{
+					$(".arrow, #top-nav1").fadeIn(400);
+					$("#top-nav1").css({"position":"fixed","top":"0"});
+				}
+				else
+				{
+					$(".arrow, #top-nav1").fadeOut(400);
+					
+				}
+			})
+			
+			$(".arrow").click(function(){
+				$("html, body").animate({scrollTop: 0}, 1000) ;
+			});
+		})
+    </script>
+</head>
+<body>
+	<!-- TOP NAVIGATION -->
+   	<div id="top-nav">
+     	<div id="logo">
+       	   <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+      	</div>
+   		<div id="top-menu">
+           	<ul>
+                <li><a href="menu.html">THỰC ĐƠN</a></li>
+                <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top-nav1">
+            <div id="logo">
+                <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+            </div>
+            <div id="top-menu">
+                <ul>
+                    <li><a href="menu.html">THỰC ĐƠN</a></li>
+                    <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+  	</div>
+    <!-- GO TO TOP -->
+    <div class="arrow">
+    	<i class="fa fa-arrow-up"></i>
+    </div>
+    <!-- BODY -->
+	<div id="body" class="body">
+    	<img src="images/uudai1.jpg" alt="Ưu đãi" />
+        <div class="left">
+        	<h4>ĐIỀU KIỆN ÁP DỤNG</h4>
+            <p>Với nhóm 04 khách, dùng menu buffet 199.000 đồng (chưa VAT) trở lên, sẽ được miễn phí 01 suất buffet (tính tiền 3 suất)</p>
+            <ul>
+            	<li>Áp dụng cho menu buffet 199.000 đồng (chưa VAT) trở lên</li>
+                <li>Áp dụng chung với chương trình menu buffet nước 39.000 đồng (coca-cola/sprite tươi)</li>
+                <li>Áp dụng cho suất buffet người lớn</li>
+                <li>Áp dụng từ Thứ 2 đến Chủ Nhật (10h00 đến 22h00)</li>
+                <li>KHÔNG áp dụng chung với các CTKM khác, thẻ thành viên, thẻ ngân hàng…</li>
+                <li>KHÔNG áp dụng cho mua mang về</li>
+            </ul>
+            <h4>ĐỊA ĐIỂM ÁP DỤNG</h4>
+            <ul>
+            	<li><strong>Kichi Kichi Vincom Kiên Giang</strong><br/> 
+                Gian hàng L4-05-06-07, tầng L4, TTTM Vincom Kiên Giang
+                Lô A12, đường Cô Bắc, Phường Vĩnh Bảo, Thành phố Rạch Giá, Tỉnh Kiên Giang
+                <br/>ĐT: (0297) 3900 998</li>
+				<li><strong>Kichi Kichi Sense City Cần Thơ</strong><br/>
+                Tầng 2, TTTM Sense City, Số 01 Đại lộ Hoà Bình, P. Tân An, Q. Ninh Kiều, Tp Cần Thơ
+                <br/>ĐT: (0292) 730 5679</li>
+                <li><strong>Kichi Kichi Lotte Mart Cần Thơ</strong><br/>
+                1F3, Tầng 1, Lotte Mart Cần Thơ
+                Số 84 Mậu Thân, Phường An Hòa, Quận Ninh Kiều, Thành phố Cần Thơ
+                <br/>ĐT: (0292) 7302 468</li>
+            </ul>
+            <img src="images/hotline.png" alt="hotline" />
+        </div>
+        <div class="right">
+        	<h4>THÔNG TIN ĐẶT BÀN ONLINE</h4>
+            <p>(Vui lòng đặt bàn trước giờ dùng bữa ít nhất <strong>3 tiếng</strong>. Chúng tôi sẽ gọi lại cho quý khách để xác nhận đặt bàn thành công)</p>
+            <form autocomplete="off">
+            	<select id="diadiem" onChange="hide(this)" >
+                	<option selected value="selected">Vui lòng chọn 01 nhà hàng</option>
+                	<option value="vincom">Kichi Kichi Vincom Kiên Giang</option>
+                    <option value="sensecity">Kichi Kichi Sense City Cần Thơ</option>
+                    <option value="lottemart">Kichi Kichi Lotte Mart Cần Thơ</option>
+                </select>
+                <div id="kq4"></div>
+                <p>Thời gian dùng bữa</p>
+                <input id="ngay" type="date" name="date" onChange="hide1(this)" />
+                <select id="thoigian">
+                	<option value="10h" selected>10 giờ</option>
+                    <option value="11h">11 giờ</option>
+                    <option value="12h">12 giờ</option>
+                    <option value="13h">13 giờ</option>
+                    <option value="14h">14 giờ</option>
+                    <option value="15h">15 giờ</option>
+                    <option value="16h">16 giờ</option>
+                    <option value="17h">17 giờ</option>
+                    <option value="18h">18 giờ</option>
+                    <option value="19h">19 giờ</option>
+                    <option value="20h">20 giờ</option>
+                    <option value="21h">21 giờ</option>
+                    <option value="22h">22 giờ</option>
+                </select>
+                <div id="kq5"></div>
+                <p>Số khách</p>
+				<select id="soluong">
+                	<option value="4nguoi" selected>4</option>
+                    <option value="5nguoi">5</option>
+                    <option value="6nguoi">6</option>
+                    <option value="7nguoi">7</option>
+                    <option value="8nguoi">8</option>
+                    <option value="9nguoi">9</option>
+                    <option value="10nguoi">10</option>
+                    <option value="11nguoi">11</option>
+                    <option value="12nguoi">12</option>
+                    <option value="13nguoi">13</option>
+                    <option value="14nguoi">14</option>
+                    <option value="15nguoi">15</option>
+                    <option value="16nguoi">16</option>
+                    <option value="17nguoi">17</option>
+                    <option value="18nguoi">18</option>
+                    <option value="19nguoi">19</option>
+                    <option value="20nguoi">20</option>
+                    <option value="21nguoi">21</option>
+                    <option value="22nguoi">22</option>
+                    <option value="23nguoi">23</option>
+                    <option value="24nguoi">24</option>
+                    <option value="25nguoi">25</option>
+                    <option value="26nguoi">26</option>
+                    <option value="27nguoi">27</option>
+                    <option value="29nguoi">28</option>
+                    <option value="29nguoi">29</option>
+                    <option value="30nguoi">30</option>
+                </select>
+                <input id="hoten" type="text" placeholder="Họ tên" onKeyUp="hide2(this)" />
+                <div id="kq1"></div>
+                <input id="dtdd" type="text" placeholder="Điện thoại di động" onKeyUp="hide3(this)" />
+                <div id="kq2"></div>
+                <input id="email" type="email" placeholder="Email" onKeyUp="hide4(this)" />
+                <div id="kq3"></div>
+                <input id="button" type="button" value="Đặt bàn" onClick="xacNhan()"/>
+            </form>
+        </div>          
+        <img src="images/footer.png" alt="Footer" />
+    </div>
+    <!-- CONTACT -->
+    <div class="contact">
+    	<div class="col">
+        	<ul>
+            	<li><a href=""><img src="images/fb.png" alt="facebook" /></a></li>
+                <li><a href=""><img src="images/instgram.png" alt="instagram" /></a></li>
+                <li><a href=""><img src="images/youtube.png" alt="youtube" /></a></li>
+            </ul>
+        </div>
+        <div class="col">
+        	<form>
+        	<table>
+            	<tr>
+                	<td>Đăng ký để nhận ưu đãi hàng tháng</td>
+                    <td>
+                    	<input type="email" placeholder=" Địa chỉ email"/>
+                        <input type="submit" value="ĐĂNG KÝ"/>
+                  	</td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+    	<div class="col-foot first">
+        	<hr/>
+            <h3>VỀ GOLDEN GATE</h3>
+            <ul>
+            	<li><a href="">TỔNG QUAN</a></li>
+                <li><a href="">SỨ MỆNH</a></li>
+                <li><a href="">TĂNG TRƯỞNG</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>THE GOLDEN SPOON</h3>
+            <ul>
+            	<li><a href="">Hiện đã có trên AppStore và CHPlay</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>VĂN HÓA</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TIN TỨC</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TUYỂN DỤNG</h3>
+            <ul>
+            	<li><a href="">Hotline: 19006622</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>LIÊN HỆ</h3>
+        </div>
+    </div>
+    <div class="about-us">
+        	<hr/>
+        	<div class="col-about text">
+            	<p>Công ty Cổ phần Thương mại Dịch vụ Cổng Vàng<br/>
+                Trụ sở chính: Số 60 Phố Giang Văn Minh, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội, Việt Nam<br/>
+                GPĐK: 0102721191 cấp ngày 09/04/2008<br/>
+                ĐT: 043 222 3000 Email: support.hn@ggg.com.vn</p>
+            </div>
+            <div class="col-about img">
+            	<img src="images/logo1.png" alt="logo" />
+                <p>&copy; 2011 Golden Gate, JSC. All rights reserved
+            </div>
+    </div>
+    <!-- VERTICAL NAV -->
+    <div class="vertical-nav">
+    	<div class="item">
+        	<img src="images/facebook.png" alt="facebook" />
+        </div>
+        <div class="item sub">
+        	<img src="images/youtube1.png" alt="youtube" />
+        </div>
+         <div class="item sub">
+        	<img src="images/instagram.png" alt="instagram" />
+        </div>
+    </div>
+</body>
+</html>

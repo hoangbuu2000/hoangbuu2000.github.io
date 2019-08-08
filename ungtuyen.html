@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ỨNG TUYỂN - Kichi Kichi</title>
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/ungtuyen.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/ungtuyen.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui-date.css">
+    <script src="js/jquery-ui-date.js"></script>
+    <script>
+    	$(document).ready(function(){
+			$( "#datepicker" ).datepicker({
+				  changeMonth: true,
+				  changeYear: true,
+				  dateFormat: "dd/mm/yy",
+			});
+
+			
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 80)
+				{
+					$(".arrow, #top-nav1").fadeIn(400);
+					$("#top-nav1").css({"position":"fixed","top":"0"});
+				}
+				else
+				{
+					$(".arrow, #top-nav1").fadeOut(400);
+					
+				}
+			})
+			
+			$(".arrow").click(function(){
+				$("html, body").animate({scrollTop: 0}, 1000) ;
+			});
+			
+			$("input[type=text]").focus(function(){
+				$(this).css("background", "wheat");
+			});
+			$("input[type=text]").focusout(function(){
+				$(this).css("background", "white");
+			});
+		})
+    </script>
+</head>
+
+<body>
+	<!-- TOP NAVIGATION & BANNER -->
+	<div id="top-nav">
+       	<div id="logo">
+          	<a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+       	</div>
+        <div id="top-menu">
+            <ul>
+                <li><a href="menu.html">THỰC ĐƠN</a></li>
+                <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+           	</ul>
+      	</div>
+  	</div>
+    <div id="top-nav1">
+       	<div id="logo">
+          	<a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+       	</div>
+        <div id="top-menu">
+            <ul>
+                <li><a href="menu.html">THỰC ĐƠN</a></li>
+                <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+           	</ul>
+      	</div>
+  	</div>
+    <!-- BODY -->
+    <div class="container">
+        <form autocomplete="off">
+            <div class="body">
+                <h2>ỨNG TUYỂN</h2>
+                <div class="item1">
+                    <div class="label">Họ tên <span>(*)</span></div>
+                    <div class="info">
+                        <input id="hoten" type="text" placeholder="Nhập họ tên" required/>
+                        <div id="kq1"></div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">Giới tính <span>(*)</span></div>
+                    <div class="info gioitinh">
+                        <input type="radio" name="gioitinh" value="Nam" checked /> Nam</span>
+                        <input type="radio" name="gioitinh" value="Nu"/> Nữ
+                        <input type="radio" name="gioitinh" value="Khac"/> Khác
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">Ngày sinh <span>(*)</span></div>
+                    <div class="info">
+                        <input type="text" id="datepicker" placeholder="Chọn ngày" required>
+                        <div id="kq2"></div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">Nơi sinh <span>(*)</span></div>
+                    <div class="info">
+                        <input id="noisinh" type="text" placeholder="Nhập nơi sinh" required/>
+                        <div id="kq3"></div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">Quê quán <span>(*)</span></div>
+                    <div class="info">
+                        <input id="quequan" type="text" placeholder="Nhập quê quán" required/>
+                        <div id="kq4"></div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">Điện thoại <span>(*)</span></div>
+                    <div class="info">
+                        <input id="dtdd" type="text" placeholder="Nhập điện thoại" required/>
+                        <div id="kq6"></div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">CMND <span>(*)</span></div>
+                    <div class="info">
+                        <input id="cmnd" type="text" placeholder="Nhập số căn cước công dân" required/>
+                        <div id="kq7"></div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">Địa chỉ <span>(*)</span></div>
+                    <div class="info">
+                        <input id="diachi" type="text" placeholder="Nhập địa chỉ" required/>
+                        <div id="kq8"></div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">Trình độ học vấn <span>(*)</span></div>
+                    <div class="info">
+                        <input id="trinhdo" type="text" placeholder="Nhập trình độ" required/>
+                        <div id="kq9"></div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label">Chọn vị trí <span>(*)</span></div>
+                    <div class="info">
+                        <select id="vitri">
+                            <option value="thungan">Thu ngân</option>
+                            <option value="phucvu">Phục vụ</option>
+                            <option value="quanly">Quản lý</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="label"></div>
+                    <div class="info">
+                        <input onClick="xacNhan()" id="button" type="submit" value="GỬI"/>
+                        <input type="reset" value="NHẬP LẠI"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- CONTACT -->
+    <div class="contact">
+    	<div class="col">
+        	<ul>
+            	<li><a href=""><img src="images/fb.png" alt="facebook" /></a></li>
+                <li><a href=""><img src="images/instgram.png" alt="instagram" /></a></li>
+                <li><a href=""><img src="images/youtube.png" alt="youtube" /></a></li>
+            </ul>
+        </div>
+        <div class="col">
+        	<form>
+        	<table>
+            	<tr>
+                	<td>Đăng ký để nhận ưu đãi hàng tháng</td>
+                    <td>
+                    	<input type="email" placeholder=" Địa chỉ email"/>
+                        <input type="submit" value="ĐĂNG KÝ"/>
+                  	</td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+    	<div class="col-foot first">
+        	<hr/>
+            <h3>VỀ GOLDEN GATE</h3>
+            <ul>
+            	<li><a href="">TỔNG QUAN</a></li>
+                <li><a href="">SỨ MỆNH</a></li>
+                <li><a href="">TĂNG TRƯỞNG</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>THE GOLDEN SPOON</h3>
+            <ul>
+            	<li><a href="">Hiện đã có trên AppStore và CHPlay</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>VĂN HÓA</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TIN TỨC</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TUYỂN DỤNG</h3>
+            <ul>
+            	<li><a href="">Hotline: 19006622</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>LIÊN HỆ</h3>
+        </div>
+    </div>
+    <!-- ABOUT US -->
+    <div class="about-us">
+        <hr/>
+        <div class="col-about text">
+            <p>Công ty Cổ phần Thương mại Dịch vụ Cổng Vàng<br/>
+                Trụ sở chính: Số 60 Phố Giang Văn Minh, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội, Việt Nam<br/>
+                GPĐK: 0102721191 cấp ngày 09/04/2008<br/>
+          	 ĐT: 043 222 3000 Email: support.hn@ggg.com.vn</p>
+      	</div>
+      	<div class="col-about img">
+            <img src="images/logo1.png" alt="logo" />
+           	<p>&copy; 2011 Golden Gate, JSC. All rights reserved
+      	</div>
+    </div>
+    <!-- VERTICAL NAV -->
+     <div class="vertical-nav opa">
+    	<div class="item">
+        	<img src="images/facebook.png" alt="facebook" />
+        </div>
+        <div class="item sub">
+        	<img src="images/youtube1.png" alt="youtube" />
+        </div>
+         <div class="item sub">
+        	<img src="images/instagram.png" alt="instagram" />
+        </div>
+    </div>
+    <!-- GO TO TOP -->
+    <div class="arrow">
+    	<i class="fa fa-arrow-up"></i>
+    </div>
+    <!-- MODAL BOX -->
+    <div id="myModal">
+    	<div class="modal-content">
+        	<div class="modal-header">
+            	<h2>Cảm ơn vì đã ứng tuyển</h2>
+            </div>
+            <div class="modal-body">
+            	<p></p>
+            </div>
+            <div class="modal-footer">
+            	<a href="main.html"><input type="button" value="OK"/></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
