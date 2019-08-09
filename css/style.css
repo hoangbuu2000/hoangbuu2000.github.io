@@ -535,7 +535,7 @@ body.preloading{
 	.row-sub .HANG .col-odd.text{
 		padding:45px 40px;
 	}
-	.row-sub .HANG .col-odd.img{
+	.row-sub .HANG .col-odd.img, .row-sub .HANG .col-even.img{
 		height:350px;
 	}
 	.row-sub .HANG .col-even.img, .row-sub .HANG .col-even.text{
@@ -598,5 +598,8 @@ body.preloading{
 	}
 	.col-about.img > p{
 		float:none;
+	}
+	.wow{
+		animation:none !important;
 	}
 }
