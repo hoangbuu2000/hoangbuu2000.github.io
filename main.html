@@ -78,11 +78,41 @@
 			$(".thucdon").click(function(){
 				$("html, body").animate({scrollTop: 1100}, 2000);
 			});
+			
+			var i = 0;
+			$(".icon").click(function(){
+				i++;
+				$(".vertical-menu").fadeToggle();
+				if(i % 2 != 0)
+				{
+					$(".main-content").css({
+						"opacity":"0.5",
+						"pointer-events":"none",
+					});
+					$("body").css({
+						"height":"100%",
+						"overflow":"hidden",
+					});
+				}
+				else
+				{
+					$(".main-content").css({
+						"opacity":"1",
+						"pointer-events":"auto",
+					});
+					$("body").css({
+						"height":"",
+						"overflow":"",
+					});
+				}
+				
+			});
 		})
     </script>
 </head>
 
 <body class="preloading">
+<div class="main-content">
 	<div class="load">
     	<img src="images/loading.gif" />
     </div>
@@ -99,6 +129,7 @@
                     <li><a href="blog.html">BLOG</a></li>
                     <li class="tuyendung"><a>TUYỂN DỤNG</a></li>
                     <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                    <li class="icon"><a onClick="myFunction()"><i class="fa fa-bars"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -106,13 +137,14 @@
             <div id="logo">
                 <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
             </div>
-            <div id="top-menu">
+            <div class="top-menu" id="top-menu">
                 <ul>
                     <li class="thucdon"><a>THỰC ĐƠN</a></li>
                     <li><a href="uudai.html">ƯU ĐÃI</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li class="tuyendung"><a>TUYỂN DỤNG</a></li>
                     <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                    <li class="icon"><a><i class="fa fa-bars"></i></a></li>
                 </ul>
             </div>
   		</div>
@@ -291,7 +323,7 @@
       	</div>
       	<div class="col-about img">
             <img src="images/logo1.png" alt="logo" />
-           	<p>&copy; 2011 Golden Gate, JSC. All rights reserved
+           	<p>&copy; 2011 Golden Gate, JSC. All rights reserved</p>
       	</div>
     </div>
     <!-- VERTICAL NAV -->
@@ -305,6 +337,16 @@
          <div class="item sub">
         	<img src="images/instagram.png" alt="instagram" />
         </div>
+    </div>
+</div>
+    <div class="vertical-menu">
+      	<ul>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="uudai.html">ƯU ĐÃI</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+           	<li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+         	<li><a href="lienhe.html">LIÊN HỆ</a></li>
+     	</ul>
     </div>
     <script>
     	new WOW().init();
