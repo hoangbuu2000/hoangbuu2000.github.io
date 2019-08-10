@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <title>THỰC ĐƠN - Kichi Kichi</title>
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/animate.css" rel="stylesheet"/>
+    <script src="js/wow.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+			
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 80)
+				{
+					$(".arrow, #top-nav1").fadeIn(400);
+					$("#top-nav1").css({"position":"fixed","top":"0"});
+				}
+				else
+				{
+					$(".arrow, #top-nav1").fadeOut(400);
+					
+				}
+			})
+			
+			$(".arrow").click(function(){
+				$("html, body").animate({scrollTop: 0}, 1000) ;
+			});
+			
+			var i = 0;
+			$(".icon").click(function(){
+				i++;
+				$(".vertical-menu").fadeToggle();
+				if(i % 2 != 0)
+				{
+					$(".main-content").css({
+						"opacity":"0.5",
+						"pointer-events":"none",
+					});
+					$("body").css({
+						"height":"100%",
+						"overflow":"hidden",
+					});
+				}
+				else
+				{
+					$(".main-content").css({
+						"opacity":"1",
+						"pointer-events":"auto",
+					});
+					$("body").css({
+						"height":"",
+						"overflow":"",
+					});
+				}
+				
+			});
+		})
+    </script>
+</head>
+
+<body>
+<div class="main-content">
+	<!-- TOP NAVIGATION -->
+   	<div id="top-nav">
+     	<div id="logo">
+       	   <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+      	</div>
+   		<div id="top-menu">
+           	<ul>
+                <li><a href="menu.html">THỰC ĐƠN</a></li>
+                <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                <li class="icon"><a onClick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top-nav1">
+            <div id="logo">
+                <a href="main.html"><img src="images/logo.png" alt="logo" /></a>
+            </div>
+            <div id="top-menu">
+                <ul>
+                    <li><a href="menu.html">THỰC ĐƠN</a></li>
+                    <li><a href="uudai.html">ƯU ĐÃI</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                    <li class="icon"><a onClick="myFunction()"><i class="fa fa-bars"></i></a></li>
+                </ul>
+            </div>
+  	</div>
+    <!-- GO TO TOP -->
+    <div class="arrow">
+    	<i class="fa fa-arrow-up"></i>
+    </div>
+    <!-- MAIN BODY -->
+    <div class="body">
+    	<h2>THỰC ĐƠN</h2>
+       	<hr/>
+        <ul>
+       		<li><a href="menu.html">BUFFET</a></li>
+           	<li><a href="menu1.html">ĐỒ UỐNG</a></li>
+            <li><a href="menu2.html" id="active">NƯỚC LẨU</a></li>
+     	</ul>
+       	<hr/>
+      	<h2 class="wow shake">199.000 - 239.000<span> // Áp dụng cho tất cả ngày trong tuần</span></h2>
+        <!-- MENU ODD ROW-->
+  		<div class="row odd wow zoomIn">
+           	<div class="col-img">
+            	<img src="images/soup.jpg" alt="Nước lẩu" />
+           	</div>
+        	<div class="col-text" id="food-special">
+               	<h2>NƯỚC LẨU</h2>
+                <hr/>
+             	<div class="left">
+                  	<p>LẨU NẤM<br/>vị ngọt đậm đà từ các loại nấm thảo mộc tốt cho sức khỏe.</p>
+                    <p class="sub-para">LẨU XUYÊN TIÊU<br/>
+					vị cay đặc trưng của tiêu, ớt đỏ và mùi thơm hoa tiêu của ẩm thực tứ xuyên.</p>
+                 	<p class="sub-para">LẨU TOM YUM<br/>
+					hương vị chua cay đặc trưng của sả, riềng, lá chanh và ớt tạo độ thơm đặc trưng.</p>
+               	</div>
+              	<div class="right">
+                    <p>LẨU CHANKO</p>
+                    <p class="sub-para">LẨU CUA ĐỒNG</p>
+         		</div>
+      		</div>
+        </div>
+   	</div>
+    <!-- CONTACT -->
+    <div class="contact">
+    	<div class="col">
+        	<ul>
+            	<li><a href=""><img src="images/fb.png" alt="facebook" /></a></li>
+                <li><a href=""><img src="images/instgram.png" alt="instagram" /></a></li>
+                <li><a href=""><img src="images/youtube.png" alt="youtube" /></a></li>
+            </ul>
+        </div>
+        <div class="col">
+        	<form>
+        	<table>
+            	<tr>
+                	<td>Đăng ký để nhận ưu đãi hàng tháng</td>
+                    <td>
+                    	<input type="email" placeholder=" Địa chỉ email"/>
+                        <input type="submit" value="ĐĂNG KÝ"/>
+                  	</td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+    	<div class="col-foot first">
+        	<hr/>
+            <h3>VỀ GOLDEN GATE</h3>
+            <ul>
+            	<li><a href="">TỔNG QUAN</a></li>
+                <li><a href="">SỨ MỆNH</a></li>
+                <li><a href="">TĂNG TRƯỞNG</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>THE GOLDEN SPOON</h3>
+            <ul>
+            	<li><a href="">Hiện đã có trên AppStore và CHPlay</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>VĂN HÓA</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TIN TỨC</h3>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>TUYỂN DỤNG</h3>
+            <ul>
+            	<li><a href="">Hotline: 19006622</a></li>
+            </ul>
+        </div>
+        <div class="col-foot">
+        	<hr/>
+            <h3>LIÊN HỆ</h3>
+        </div>
+    </div>
+    <div class="about-us">
+        	<hr/>
+        	<div class="col-about text">
+            	<p>Công ty Cổ phần Thương mại Dịch vụ Cổng Vàng<br/>
+                Trụ sở chính: Số 60 Phố Giang Văn Minh, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội, Việt Nam<br/>
+                GPĐK: 0102721191 cấp ngày 09/04/2008<br/>
+                ĐT: 043 222 3000 Email: support.hn@ggg.com.vn</p>
+            </div>
+            <div class="col-about img">
+            	<img src="images/logo1.png" alt="logo" />
+                <p>&copy; 2011 Golden Gate, JSC. All rights reserved</p>
+                <p>1851050010 - Đặng Hoàng Bửu</p>
+            </div>
+    </div>
+    <!-- VERTICAL NAV -->
+    <div class="vertical-nav opa">
+    	<div class="item">
+        	<img src="images/facebook.png" alt="facebook" />
+        </div>
+        <div class="item sub">
+        	<img src="images/youtube1.png" alt="youtube" />
+        </div>
+         <div class="item sub">
+        	<img src="images/instagram.png" alt="instagram" />
+        </div>
+    </div>
+</div>
+	<div class="vertical-menu">
+    	<input type="text" placeholder="Tìm kiếm menu" onKeyUp="timKiem(this)"/>
+      	<ul>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="uudai.html">ƯU ĐÃI</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+           	<li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+         	<li><a href="lienhe.html">LIÊN HỆ</a></li>
+     	</ul>
+    </div>
+    <script>
+    	new WOW().init();
+		function timKiem(obj)
+		{
+			var t = obj.value.toLowerCase();
+			var menu = document.querySelectorAll(".vertical-menu li");
+			for(var i = 0; i < menu.length; i++)
+				menu[i].style.border = "";
+			
+			for(var i = 0; i < menu.length; i++)
+			{
+				var text = menu[i].getElementsByTagName("a")[0].innerText;
+				if(text.toLowerCase().indexOf(t) >= 0)
+					menu[i].style.border = "1px solid red";
+			}
+		}
+    </script>
+</body>
+</html>
