@@ -18,3 +18,26 @@ function myFunction1(){
 }
 
 setInterval(function(){myFunction();}, 2000);*/
+function myFunction() {
+  var x = document.getElementById("top-menu");
+  if (x.className == "top-menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "top-menu";
+  }
+}
+
+function timKiem(obj)
+{
+	var t = obj.value;
+	var menu = document.querySelectorAll(".vertical-menu li");
+	for(var i = 0; i < menu.length; i++)
+		menu[i].style.border = "";
+	
+	for(var i = 0; i < menu.length; i++)
+	{
+		var text = menu[i].getElementsByTagName("a")[0].innerText;
+		if(text.indexOf(t) >= 0)
+			menu[i].style.border = "1px solid red";
+	}
+}

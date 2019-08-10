@@ -468,9 +468,6 @@ video{
 		height:60px;
 		padding:10px 0;
 	}
-	.vertical-nav{
-		display:none;
-	}
 	#top-menu{
 		padding:0;
 	}
@@ -482,6 +479,9 @@ video{
 		display: block !important;
 		font-size:24px;
 		pointer-events:auto;
+	}
+	.vertical-nav{
+		display:none;
 	}
 	.vertical-menu{
 		background-color:#333;
@@ -497,6 +497,14 @@ video{
 	.vertical-menu a{
 		text-decoration:none;
 		color:white;
+	}
+	.vertical-menu input[type=text]{
+		padding: 10px;
+		margin: 20px 0;
+		background-color: #ffffffd9;
+		color: currentColor;
+		border: none;
+		font-size: 16px;
 	}
 	video{
 		display:block;
