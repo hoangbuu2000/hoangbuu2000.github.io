@@ -40,6 +40,8 @@
 }
 #top-menu ul{
 	list-style-type:none;
+	overflow:hidden;
+	font-weight:bold;
 }
 #top-menu li{
 	float:left;
@@ -298,6 +300,9 @@ div.content > p{
 div.content > .img{
 	text-align:center;
 }
+div.content > .img > img{
+	width:100%;
+}
 p.center{
 	text-align:center;
 	line-height:25px;
@@ -318,3 +323,14 @@ p.comment{
 .content h4{
 	margin:50px 0;
 }
+.content.event > p{
+	color:#666;
+}
+.content.event a{
+	text-decoration:none;
+	color:black;
+}
+.content.event a:hover{
+	text-decoration:underline;
+}
+	
