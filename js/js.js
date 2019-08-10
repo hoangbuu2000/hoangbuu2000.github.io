@@ -29,7 +29,7 @@ function myFunction() {
 
 function timKiem(obj)
 {
-	var t = obj.value;
+	var t = obj.value.toLowerCase();
 	var menu = document.querySelectorAll(".vertical-menu li");
 	for(var i = 0; i < menu.length; i++)
 		menu[i].style.border = "";
@@ -37,7 +37,7 @@ function timKiem(obj)
 	for(var i = 0; i < menu.length; i++)
 	{
 		var text = menu[i].getElementsByTagName("a")[0].innerText;
-		if(text.indexOf(t) >= 0)
+		if(text.toLowerCase().indexOf(t) >= 0)
 			menu[i].style.border = "1px solid red";
 	}
 }
