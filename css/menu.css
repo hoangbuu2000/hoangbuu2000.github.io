@@ -45,6 +45,7 @@ body{
 #top-menu ul{
 	list-style-type:none;
 	overflow:hidden;
+	font-weight:bold;
 }
 #top-menu li{
 	float:left;
@@ -57,6 +58,9 @@ body{
 #top-menu a:hover{
 	text-decoration:underline;
 	color:black;
+}
+.vertical-menu{
+	display:none;
 }
 .clear{
 	clear:both;
@@ -339,4 +343,129 @@ body{
 }
 .vertical-nav > div.item:last-child{
 	margin-bottom:-2px;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+	.load > img{
+		width:40%;
+		height:40%;
+		position:absolute;
+		top:30%;
+		left:30%;
+	}
+  	#logo{
+		padding:0 10px;
+	}
+	#logo img{
+		max-width:100%;
+		width:auto;
+		height:60px;
+		padding:10px 0;
+	}
+	#top-menu{
+		padding:0;
+	}
+	#top-menu > ul > li{
+		display: none;
+	}
+	#top-menu li.icon{
+		float:right;
+		display: block !important;
+		font-size:24px;
+		pointer-events:auto;
+		cursor:pointer;
+	}
+	.vertical-nav{
+		display:none;
+	}
+	.vertical-menu{
+		background-color:#333;
+		position:fixed;
+		z-index:10000;
+		top:0;
+		height:100%;
+	}
+	.vertical-menu li{
+		padding:10px;
+		border-bottom:1px solid grey;
+	}
+	.vertical-menu a{
+		text-decoration:none;
+		color:white;
+	}
+	.vertical-menu input[type=text]{
+		padding: 10px;
+		margin: 20px 0;
+		background-color: #ffffffd9;
+		color: currentColor;
+		border: none;
+		font-size: 16px;
+	}
+	.owl-carousel{
+		display:none !important;
+	}
+	.body{
+		margin:0;
+	}
+	.body > ul{
+		padding-left:100px;
+	}
+	.body > ul ~ h2{
+		font-size:26px;
+	}
+	.body > h2 > span{
+		margin:0;
+	}
+	.row.odd > .col-img, .row.odd > .col-text, .row.even > .col-img, .row.even > .col-text{
+		float:none;
+	}
+	.row.odd > .col-img{
+		margin:0;
+		width:100%;
+		padding:40px;
+	}
+	.row.odd > .col-text{
+		padding: 40px;
+    	width: 100%;
+		margin:0;
+	}
+	.row.even{
+		margin:0;
+	}
+	.row.even > .col-img, .row.even > .col-text{
+		width:100%;
+		padding:40px;
+	}
+	.contact{
+		display:none;
+	}
+	.footer{
+		padding-left:30px;
+	}
+	.col-foot.first{
+		margin:0;
+	}
+	.col-foot{
+		margin:0 20px;
+	}
+	.col-about{
+		margin-top:20px;
+		width:100%;
+		float:none;
+	}
+	.about-us > hr{
+		display:none;
+	}
+	.col-about.text{
+		margin:0;
+	}
+	.col-about.img > img{
+		float:none;
+	}
+	.col-about.img > p{
+		float:none;
+	}
+	.wow{
+		animation:none !important;
+	}
 }
