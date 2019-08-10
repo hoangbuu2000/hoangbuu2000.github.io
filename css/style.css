@@ -28,6 +28,10 @@ body.preloading{
 	top:40%;
 	left:40%;
 }
+/* VIDEO RESPONSIVE */
+video{
+	display:none;
+}
 /* Navigation */
 #top-nav{
 	width:100%;
@@ -493,6 +497,10 @@ body.preloading{
 	.vertical-menu a{
 		text-decoration:none;
 		color:white;
+	}
+	video{
+		display:block;
+		max-width:100%;
 	}
 	.owl-carousel{
 		display:none !important;
