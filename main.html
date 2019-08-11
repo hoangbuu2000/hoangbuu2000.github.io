@@ -56,11 +56,18 @@
 			$(".arrow").click(function(){
 				$("html, body").animate({scrollTop: 0}, 1000) ;
 			});
+			
+			var ani = ["swing", "shake", "heartBeat", "flash", "rubberBand", "flip", "hinge", "jello", "tada", "wobble"];
+			var idx ;
 			$(".button").mouseover(function(){
-				$(this).addClass("animated swing");
+				idx = parseInt(Math.random() * ani.length) ;
+				$(this).removeClass("wow heartBeat slow");
+				$(this).addClass("animated " + ani[idx]);
+				$(this).css("animation-name",ani[idx]);
 			});
 			$(".button").mouseout(function(){
-				$(this).removeClass("animated swing");
+				$(this).removeClass("animated " + ani[idx]);
+				$(this).css("animation-name","none");
 			});
 			$('.owl-carousel').owlCarousel({
 				loop:true,
@@ -185,62 +192,62 @@
         <div class="col text">
             <h2>Lẩu Băng Chuyền</h2>
            	<p>Kichi-Kichi là chuỗi nhà hàng chuyên về buffet lẩu hàng đầu Việt Nam. Các món ăn ngon và đa dạng được phục vụ với hình thức băng chuyền độc            đáo, hiện đại, vốn là sự kết hợp của phong cách phục vụ Kaiten đến từ Nhật Bản với kiến trúc hiện đại. Chỉ với một giá cố định, khách hàng được            thưởng thức không hạn chế gần 100 sản phẩm nhúng lẩu đặc sắc như bò Mỹ nhập khẩu, cá hồi nguyên con, rau sạch, nấm tươi theo mùa,…</p>
-           	<a href="menu.html">Xem thực đơn</a>
+           	<a class="wow bounceInLeft" href="menu.html">Xem thực đơn</a>
         </div>
         <div class="col img">
         	<img src="images/intro.png" alt="introduction" />
-            <a class="button" href="menu.html">BUFFET LẨU</a>
+            <a class="button wow bounceInRight" href="menu.html">BUFFET LẨU</a>
         </div>
     </div>
     <!-- EVENTS -->
     <div class="row-sub">
-    	<DIV class="HANG wow slideInUp slow">
-            <div class="col-odd text">
+    	<DIV class="HANG">
+            <div class="col-odd text wow fadeInLeft">
                 <h2>CAM KẾT MÁT LẠNH 2019: NHẬP VAI HUNTER - SĂN KHO BÁU 1 TỶ DỄ BẤT NGỜ</h2>
                 <p>Dành cho các “thợ săn” máu chiến nhấtttt, kho báu khổng lồ lên đến 1 TỶ ĐỒNG đã sẵn sàng được khai phá rồi đây.</p>
-                <a class="button" href="event1.html">SĂN NGAY!</a>
+                <a class="button wow heartBeat slow" href="event1.html">SĂN NGAY!</a>
             </div>
-            <div class="col-odd img">
+            <div class="col-odd img wow fadeInRight">
                 <img src="images/event.jpeg" alt="event" />
             </div>
         </DIV>
-        <DIV class="HANG wow slideInUp">
-            <div class="col-even img">
+        <DIV class="HANG">
+            <div class="col-even img wow fadeInLeft">
                 <img src="images/event1.jpg" alt="event" />
             </div>
-            <div class="col-even text">
+            <div class="col-even text wow fadeInRight">
                 <h2>Đột kích Kichi-Kichi Sun Plaza Thuỵ Khuê – Nhận ngay 1000 suất Buffet lẩu thoả thuê oánh chén</h2>
                 <p>Chào đón “tọa độ mới toanh” xuất hiện trên bản đồ lẩu băng chuyền – Kichi-Kichi SUN PLAZA Thụy Khuê.</p>
-                <a class="button" href="event2.html">KHÁM PHÁ NGAY</a>
+                <a class="button wow heartBeat slow" href="event2.html">KHÁM PHÁ NGAY</a>
             </div>
         </DIV>
-        <DIV class="HANG wow slideInUp">
-            <div class="col-odd text third">
+        <DIV class="HANG">
+            <div class="col-odd text third wow fadeInLeft">
                 <h2>BÁO ĐỘNG GẤP ❗ KICHI-KICHI BÙNG NỔ NGỌT THƠM MÁT LẠNH VỚI THẠCH TÁO MÙA HÈ</h2>
                 <p>Ăn món tráng miệng gì siêu “cool” hè này? Kichi mách bạn: Món tráng miệng cực độc đã chính-thức-ra-mắt và đổ bộ tất cả các nhà hàng Kichi Hà            Nội.</p>
-                <a class="button" href="event3.html">KHÁM PHÁ NGAY</a>
+                <a class="button wow heartBeat slow" href="event3.html">KHÁM PHÁ NGAY</a>
             </div>
-            <div class="col-odd img">
+            <div class="col-odd img wow fadeInRight">
                 <img src="images/event2.png" alt="event" />
             </div>
         </DIV>
-        <DIV class="HANG wow slideInUp">
-            <div class="col-even img">
+        <DIV class="HANG">
+            <div class="col-even img wow fadeInLeft">
                 <img src="images/event3.png" alt="event" />
             </div>
-            <div class="col-even text fourth">
+            <div class="col-even text fourth wow fadeInRight">
                 <h2>LẨU RIÊU NGON THẦN SẦU CHÍNH THỨC TRỞ LẠI TRONG MÙA HÈ 2019</h2>
                 <p>Hè đến thì ăn gì cho phiêu? Đến Kichi-Kichi chén ngay lẩu riêu. Còn chờ gì mà không ăn cho phê lẩu riêu ngon mê ly với Kichi-Kichi nhỉ?</p>
-                <a class="button" href="event4.html">KHÁM PHÁ NGAY</a>
+                <a class="button wow heartBeat slow" href="event4.html">KHÁM PHÁ NGAY</a>
             </div>
         </DIV>
-        <DIV class="HANG wow slideInUp">
-            <div class="col-odd text fifth">
+        <DIV class="HANG">
+            <div class="col-odd text fifth wow fadeInLeft">
                 <h2>HÀ NỘI - ƯU ĐÃI BUFFET 169K CỰC SHOCK TẤT CẢ CÁC NGÀY TRONG TUẦN</h2>
                 <p>Ngay từ hôm nay, team ghiền lẩu Kichi-Kichi được thả ga ưu đãi Buffet cực khủng chỉ từ 169k tất-cả-các-ngày-trong-tuần.</p>
-                <a class="button" href="event5.html">TÌM HIỂU NGAY</a>
+                <a class="button wow heartBeat slow" href="event5.html">TÌM HIỂU NGAY</a>
             </div>
-            <div class="col-odd img">
+            <div class="col-odd img wow fadeInRight">
                 <img src="images/event4.png" alt="event" />
             </div>
         </DIV>
@@ -253,7 +260,7 @@
         <div class="wrapper">
             <div class="wrapper-item"><span class="text-banner">"ĐỪNG TÌM VIỆC <br/> HÃY TÌM SỰ NGHIỆP"</span></div>
             <div class="wrapper-item"><span class="text-small-banner">HÀNG TRĂM CÔNG VIỆC HẤP DẪN ĐANG CHỜ BẠN</span></div>
-            <div class="wrapper-item"><a class="button" href="ungtuyen.html">ỨNG TUYỂN</a></div>
+            <div class="wrapper-item"><a class="button wow heartBeat slow" href="ungtuyen.html">ỨNG TUYỂN</a></div>
         </div>
     </div>
     <!-- CONTACT -->
