@@ -38,11 +38,19 @@
 				{
 					$(".location span i").addClass("fa fa-caret-right");
 					$(".location span i").css("marginRight", "0px");
+					$(".location span").animate({
+						"border-bottom-left-radius":"5px",
+						"border-bottom-right-radius":"5px",
+					},1000);
 				}
 				else
 				{
 					$(".location span i").addClass("fa fa-caret-down");
 					$(".location span i").css("marginRight", "2px");
+					$(".location span").css({
+						"border-bottom-left-radius":"0",
+						"border-bottom-right-radius":"0",
+					});
 				}
 				i++;
 			});
@@ -53,10 +61,40 @@
 				$(".opa").animate({opacity:1}, 500).css("pointer-events", "auto");
 			});
 			
+			var i = 0;
+			$(".icon").click(function(){
+				i++;
+				$(".vertical-menu").fadeToggle();
+				if(i % 2 != 0)
+				{
+					$(".main-content").css({
+						"opacity":"0.5",
+						"pointer-events":"none",
+					});
+					$("body").css({
+						"height":"100%",
+						"overflow":"hidden",
+					});
+				}
+				else
+				{
+					$(".main-content").css({
+						"opacity":"1",
+						"pointer-events":"auto",
+					});
+					$("body").css({
+						"height":"",
+						"overflow":"",
+					});
+				}
+				
+			});
+			
 		})
     </script>
 </head>
 <body>
+<div class="main-content">
 	<!-- TOP NAVIGATION -->
    	<div id="top-nav" class="opa">
      	<div id="logo">
@@ -69,6 +107,7 @@
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
                 <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                <li class="icon"><a onClick="myFunction()"><i class="fa fa-bars"></i></a></li>
             </ul>
         </div>
     </div>
@@ -83,6 +122,7 @@
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
                     <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                    <li class="icon"><a onClick="myFunction()"><i class="fa fa-bars"></i></a></li>
                 </ul>
             </div>
   	</div>
@@ -205,8 +245,33 @@
         	<img src="images/event2.png" />
         </div>
     </div>
+</div>
+	<div class="vertical-menu">
+    	<input type="text" placeholder="Tìm kiếm menu" onKeyUp="timKiem(this)"/>
+      	<ul>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="uudai.html">ƯU ĐÃI</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+           	<li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+         	<li><a href="lienhe.html">LIÊN HỆ</a></li>
+     	</ul>
+    </div>
     <script>
     	new WOW().init();
+		function timKiem(obj)
+		{
+			var t = obj.value.toLowerCase();
+			var menu = document.querySelectorAll(".vertical-menu li");
+			for(var i = 0; i < menu.length; i++)
+				menu[i].style.border = "";
+			
+			for(var i = 0; i < menu.length; i++)
+			{
+				var text = menu[i].getElementsByTagName("a")[0].innerText;
+				if(text.toLowerCase().indexOf(t) >= 0)
+					menu[i].style.border = "1px solid red";
+			}
+		}
     </script>
 </body>
 </html>
