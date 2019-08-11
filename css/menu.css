@@ -62,6 +62,9 @@ body{
 .vertical-menu{
 	display:none;
 }
+#top-menu li.icon{
+	display:none;
+}
 .clear{
 	clear:both;
 }
