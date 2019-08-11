@@ -61,11 +61,11 @@
 				$(".opa").animate({opacity:1}, 500).css("pointer-events", "auto");
 			});
 			
-			var i = 0;
+			var j = 0;
 			$(".icon").click(function(){
-				i++;
+				j++;
 				$(".vertical-menu").fadeToggle();
-				if(i % 2 != 0)
+				if(j % 2 != 0)
 				{
 					$(".main-content").css({
 						"opacity":"0.5",
