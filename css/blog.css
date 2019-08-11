@@ -47,6 +47,9 @@
 	float:left;
 	padding:20px;
 }
+#top-menu li.icon{
+	display:none;
+}
 #top-menu a{
 	text-decoration:none;
 	color:#808080;
@@ -54,6 +57,9 @@
 #top-menu a:hover{
 	text-decoration:underline;
 	color:black;
+}
+.vertical-menu{
+	display:none;
 }
 /* BODY MAIN BLOG */
 .owl-carousel.owl-theme{
@@ -332,5 +338,91 @@ p.comment{
 }
 .content.event a:hover{
 	text-decoration:underline;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+	.load > img{
+		width:40%;
+		height:40%;
+		position:absolute;
+		top:30%;
+		left:30%;
+	}
+  	#logo{
+		padding:0 10px;
+	}
+	#logo img{
+		max-width:100%;
+		width:auto;
+		height:60px;
+		padding:10px 0;
+	}
+	#top-menu{
+		padding:0;
+	}
+	#top-menu > ul > li{
+		display: none;
+	}
+	#top-menu li.icon{
+		float:right;
+		display: block !important;
+		font-size:24px;
+		pointer-events:auto;
+	}
+	.vertical-nav{
+		display:none;
+	}
+	.vertical-menu{
+		background-color:#333;
+		position:fixed;
+		z-index:10000;
+		top:0;
+		height:100%;
+	}
+	.vertical-menu li{
+		padding:10px;
+		border-bottom:1px solid grey;
+	}
+	.vertical-menu a{
+		text-decoration:none;
+		color:white;
+	}
+	.vertical-menu input[type=text]{
+		padding: 10px;
+		margin: 20px 0;
+		background-color: #ffffffd9;
+		color: currentColor;
+		border: none;
+		font-size: 16px;
+	}
+	.contact{
+		display:none;
+	}
+	.footer{
+		padding-left:30px;
+	}
+	.col-foot.first{
+		margin:0;
+	}
+	.col-foot{
+		margin:0 20px;
+	}
+	.col-about{
+		margin-top:20px;
+		width:100%;
+		float:none;
+	}
+	.about-us > hr{
+		display:none;
+	}
+	.col-about.text{
+		margin:0;
+	}
+	.col-about.img > img{
+		float:none;
+	}
+	.col-about.img > p{
+		float:none;
+	}
 }
 	

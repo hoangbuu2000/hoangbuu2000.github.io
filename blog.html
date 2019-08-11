@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOG - Kichi Kichi</title>
     <link rel="shortcut icon" href="images/logo.png" />
     <link rel="stylesheet" href="css/blog.css" />
@@ -56,11 +57,41 @@
 			$(".arrow").click(function(){
 				$("html, body").animate({scrollTop: 0}, 1000) ;
 			});
+			
+			var i = 0;
+			$(".icon").click(function(){
+				i++;
+				$(".vertical-menu").fadeToggle();
+				if(i % 2 != 0)
+				{
+					$(".main-content").css({
+						"opacity":"0.5",
+						"pointer-events":"none",
+					});
+					$("body").css({
+						"height":"100%",
+						"overflow":"hidden",
+					});
+				}
+				else
+				{
+					$(".main-content").css({
+						"opacity":"1",
+						"pointer-events":"auto",
+					});
+					$("body").css({
+						"height":"",
+						"overflow":"",
+					});
+				}
+				
+			});
 		})
     </script>
 </head>
 
 <body>
+<div class="main-content">
 	<!-- TOP NAVIGATION & BANNER -->
 	<div id="top-nav">
        	<div id="logo">
@@ -73,6 +104,7 @@
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
                 <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                <li class="icon"><a onClick="myFunction()"><i class="fa fa-bars"></i></a></li>
            	</ul>
       	</div>
   	</div>
@@ -87,6 +119,7 @@
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
                 <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                <li class="icon"><a onClick="myFunction()"><i class="fa fa-bars"></i></a></li>
            	</ul>
       	</div>
   	</div>
@@ -236,5 +269,32 @@ Món tráng miệng Kakigori hấp dẫn giới trẻ với hai hương vị Kak
     <div class="arrow">
     	<i class="fa fa-arrow-up"></i>
     </div>
+</div>
+	<div class="vertical-menu">
+    	<input type="text" placeholder="Tìm kiếm menu" onKeyUp="timKiem(this)"/>
+      	<ul>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="uudai.html">ƯU ĐÃI</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+           	<li><a href="ungtuyen.html">TUYỂN DỤNG</a></li>
+         	<li><a href="lienhe.html">LIÊN HỆ</a></li>
+     	</ul>
+    </div>
+    <script>
+    	function timKiem(obj)
+		{
+			var t = obj.value.toLowerCase();
+			var menu = document.querySelectorAll(".vertical-menu li");
+			for(var i = 0; i < menu.length; i++)
+				menu[i].style.border = "";
+			
+			for(var i = 0; i < menu.length; i++)
+			{
+				var text = menu[i].getElementsByTagName("a")[0].innerText;
+				if(text.toLowerCase().indexOf(t) >= 0)
+					menu[i].style.border = "1px solid red";
+			}
+		}
+    </script>
 </body>
 </html>
